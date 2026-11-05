@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGsafe</title>
+    <style>
+      :root {
+        --bg: #eef2f0;
+        --card: #ffffff;
+        --ink: #1f2a2e;
+        --muted: #5e6b6f;
+        --line: #d5ddda;
+        --primary: #1e5a4e;
+        --accent: #f2c94c;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      .card {
+        width: min(760px, 92vw);
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 32px 28px;
+        box-shadow: 0 10px 24px rgba(31, 42, 46, 0.08);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        background: var(--accent);
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1rem;
+      }
+      .box {
+        background: #f8faf9;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin-top: 18px;
+      }
+      .box strong {
+        color: var(--ink);
+      }
+      .pill {
+        display: inline-block;
+        background: rgba(30, 90, 78, 0.08);
+        color: var(--primary);
+        border: 1px solid rgba(30, 90, 78, 0.15);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-weight: 700;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge">AG</div>
+      <h1>AGsafe</h1>
+      <p>
+        AGsafe keeps your family’s important accounts, passwords, documents, and household details
+        private and encrypted.
+      </p>
+      <p>
+        This page is a simple public landing page used for secure auth configuration and app redirects.
+      </p>
+      <div class="box">
+        <strong>Privacy note:</strong>
+        <p>
+          AGsafe stores data privately and encrypts sensitive information before it is saved. The owner
+          does not access the user’s personal secrets.
+        </p>
+      </div>
+      <div class="pill">Free GitHub Pages site</div>
+    </main>
+  </body>
+</html>
